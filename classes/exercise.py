@@ -5,9 +5,12 @@ class Person():
 
     def __init__(self, name):
         self.name = name
+
     def talk(self):
-        return input('Say Something: ')
+        print(f'Hello {self.name}. Pleased to meet you')
 
 
-person = Person(input('Whats your name: '))
-print(f'Hello {person.name}. Did you say, {person.talk()} ?')
+person = Person(input('What is your name: '))
+person.talk()
+
+
